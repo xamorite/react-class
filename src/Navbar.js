@@ -2,7 +2,7 @@ import './App.css';
 
 const Navbar = () => {
     return (
-        <div className="nav p-5">
+        <div className="bg-black text-white nav p-5">
             <nav className='flex flex-row justify-between p-5 '>
                 <h1 className='logo font-bold text-[2.5vw] text-red-500'>Nike</h1>
                 <ul className="flex flex-row justify-between ">

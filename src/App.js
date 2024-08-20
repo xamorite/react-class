@@ -7,7 +7,7 @@ const App = () => {
   // const name = "emmanuel";
   
   return (
-    <div className="bg-black text-white">
+    <div className="">
      <Navbar/>
      <Home/>
      <Footer/>
