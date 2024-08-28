@@ -19,3 +19,5 @@ const ShoeCard = ({ name, image, price, type }) => {
   };
 
   export default ShoeCard;
+
+
