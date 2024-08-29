@@ -11,18 +11,8 @@ import Footer from './footer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
- <React.StrictMode>
-   <Navbar/>
-    {/* <App/> */}
-  <BrowserRouter>
-   <Routes>
-      <Route path='/' element={<Home/>}/>
-      <Route path='/Products' element={<Products/>}/>
-      <Route path='/About' element={<Products/>}/>
-      <Route path='/Contact' element={<Products/>}/>
-   </Routes>
-  </BrowserRouter>
-   <Footer/>
+ <React.StrictMode> 
+  <App/>
  </React.StrictMode>
  
 );
