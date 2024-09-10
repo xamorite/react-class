@@ -1,4 +1,4 @@
-const ShoeCard = ({ name, image, price, type }) => {
+const ShoeCard = ({ name, image, price, type, addToCart }) => {
     return (
       <div className="w-60 h-80 bg-black p-3 flex flex-col gap-1 rounded-2xl">
         <div className="h-48 bg-gray-700 rounded-xl">
@@ -12,7 +12,7 @@ const ShoeCard = ({ name, image, price, type }) => {
             </div>
             <span className="font-bold text-[#FFC100]">${price}</span>
           </div>
-          <button className="hover:bg-[#FFC100] text-gray-50 bg-[#C40C0C] py-2 rounded-md">Add to cart</button>
+          <button onClick={addToCart} className="hover:bg-[#FFC100] text-gray-50 bg-[#C40C0C] py-2 rounded-md">Add to cart</button>
         </div>
       </div>
     );
