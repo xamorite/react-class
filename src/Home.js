@@ -1,6 +1,6 @@
 import Shoe from "./Assets/sh.png";
 import sampleShoe from "./Assets/sho.png";
-import { useState, } from "react";
+import { useState } from "react";
 // import ReactDOM from 'react-dom/client';
 // import axios from "axios";
 import ShoeCard from "./ShoeCard";
@@ -14,11 +14,10 @@ const Home = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(`Hi ${Username} \n you are ${age} years old, \n  your cell number is ${pnumber}, your occupation is ${occupation}`);
-
-  }
-
-  
+    alert(
+      `Hi ${Username} \n you are ${age} years old, \n  your cell number is ${pnumber}, your occupation is ${occupation}`
+    );
+  };
 
   //   const [shoes, setShoes] = useState([]);
 
@@ -43,7 +42,10 @@ const Home = () => {
       </div>
 
       <div className='"hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]" w-[50.2vw] mx-auto my-20'>
-        <form onSubmit={handleSubmit} class="bg-white p-4 rounded-lg max-w-[50vw] mx-auto  text-center">
+        <form
+          onSubmit={handleSubmit}
+          class="bg-white p-4 rounded-lg max-w-[50vw] mx-auto  text-center"
+        >
           <h1 className="text-black text-center text-bold text-3xl">
             Enter your details for booking
           </h1>
@@ -87,7 +89,10 @@ const Home = () => {
             />
           </div>
           /* From Uiverse.io by tranphattrien */
-          <button type="submit" class=" mx-auto w-[150px] bg-black h-[50px] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#f91a1a] before:to-[rgb(255,0,0)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]">
+          <button
+            type="submit"
+            class=" mx-auto w-[150px] bg-black h-[50px] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#f91a1a] before:to-[rgb(255,0,0)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff]"
+          >
             Button
           </button>
         </form>
@@ -98,7 +103,7 @@ const Home = () => {
         <button type="button" className="bg-red-500" onClick={()=>setColor("blue")}>Change color</button>
       </div> */}
 
-      
+      <h1>hello</h1>
     </div>
   );
 };
